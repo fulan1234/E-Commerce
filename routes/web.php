@@ -46,7 +46,7 @@ Route::middleware(['auth','role:admin'])->group(function(){     // buat ngebatas
 
     Route::controller(SubCategoryController::class)->group(function () {
         Route::get('/admin/all-subcategory', 'Index')->name('allsubcategory');
-        Route::get('/admin/add-subcategory', 'AddCategory')->name('addsubcategory');
+        Route::get('/admin/add-subcategory', 'AddSubCategory')->name('addsubcategory');
     });
 
     Route::controller(ProductController::class)->group(function () {
