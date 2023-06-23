@@ -102,13 +102,13 @@
               <span class="menu-header-text">Sub Category</span>
             </li>
             <li class="menu-item">
-              <a href="{{route('allsubcategory')}}" class="menu-link">
+              <a href="{{route('addsubcategory')}}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-home-circle"></i>
                 <div data-i18n="Analytics">Add Sub Category</div>
               </a>
             </li>
             <li class="menu-item">
-              <a href="{{route('allproducts')}}" class="menu-link">
+              <a href="{{route('allsubcategory')}}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-home-circle"></i>
                 <div data-i18n="Analytics">All Sub Category</div>
               </a>
