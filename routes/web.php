@@ -61,6 +61,7 @@ Route::middleware(['auth','role:admin'])->group(function(){     // buat ngebatas
     Route::controller(ProductController::class)->group(function () {
         Route::get('/admin/all-products', 'Index')->name('allproducts');
         Route::get('/admin/add-product', 'Addproduct')->name('addproduct');
+        Route::post('/admin/store-product', 'StoreProduct')->name('storeproduct');
     });
 
     Route::controller(OrderController::class)->group(function () {
